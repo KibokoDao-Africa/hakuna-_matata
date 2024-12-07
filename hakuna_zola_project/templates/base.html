@@ -13,11 +13,14 @@
             <ul>
                 <li><a href="/">Home</a></li>
                 <li><a href="/docs/">Docs</a></li>
+                <li><a href="/blog/">Blog</a></li>
             </ul>
         </nav>
     </header>
     <main>
-        {{ content | safe }}
+        {% block content %}
+        <!-- Default content goes here, or leave it blank -->
+        {% endblock content %}
     </main>
     <footer>
         <p>Powered by Zola</p>

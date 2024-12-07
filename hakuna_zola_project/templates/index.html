@@ -1,5 +1,6 @@
 {% extends "base.html" %}
+
 {% block content %}
-    <h2>{{ page.title }}</h2>
-    {{ page.content | safe }}
+    <h2>{{ section.title }}</h2>
+    {{ section.content | safe }}
 {% endblock content %}
