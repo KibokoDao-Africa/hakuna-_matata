@@ -5,25 +5,83 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{{ config.title }}</title>
     <link rel="stylesheet" href="/css/main.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.6.22/dist/css/uikit.min.css">
 </head>
 <body>
     <header>
-        <h1>{{ config.title }}</h1>
-        <nav>
-            <ul>
+        <div class="container">
+            <h1 class="logo"><b>Docs</b></h1>
+            <ul class="nav-left">
                 <li><a href="/">Home</a></li>
                 <li><a href="/docs/">Docs</a></li>
                 <li><a href="/blog/">Blog</a></li>
             </ul>
-        </nav>
+            <ul class="nav-right">
+                <li><a href="/changelog/" class="changelog-link">Changelog</a></li>
+                <li><a href="/contact/" class="contact-link">Contact</a></li>
+            </ul>
+        </div>
     </header>
     <main>
+
+
+
+        <section class="hero-section">
+            <!-- Add your image here -->
+           <img src="/static/images/imageee.png" alt="imageee.png" class="imageee">
+        </section>
+
+
+
+
+        <div class="hero-section">
+            <h2 class="hero-title">How can we help you?</h2>
+            <p class="hero-description">Search or browse in-depth articles and videos on everything from setup to customisation and development.</p>
+            <div class="search-container">
+                <input type="text" class="search-input" placeholder="Search for answers...">
+            </div>
+        </div>
+
         {% block content %}
-        <!-- Default content goes here, or leave it blank -->
+        <!-- Main content, including cards, articles, etc. -->
         {% endblock content %}
     </main>
-    <footer>
-        <p>Powered by Zola</p>
+    
+    <footer class="footer-container">
+
+
+
+ <!-- Contact Button -->
+ <div class="footer-contact">
+    <a href="#contact" class="footer-button">Contact Us</a>
+</div>
+
+<!-- Links Section -->
+<div class="footer-links">
+    <a href="#">Home</a>
+    <a href="#">Blog</a>
+    <a href="#contact">Contact</a>
+</div>
+
+<!-- Social Media Icons -->
+<div class="social-icons">
+    <a href="#"><i class="fab fa-twitter"></i></a>
+    <a href="#"><i class="fab fa-facebook"></i></a>
+    <a href="#"><i class="fab fa-instagram"></i></a>
+    <a href="#"><i class="fab fa-youtube"></i></a>
+</div>
+
+<!-- Footer Tagline -->
+<p class="made-by">Made by a human somewhere on planet Earth.</p>
+
+
+
+
+
+
+        <p class="footer-text">Powered by Zola</p>
     </footer>
+
+    <script src="/js/faq.js"></script>
 </body>
 </html>

@@ -1,6 +1,7 @@
 +++
-title = "Welcome to Hakuna Project"
+title = "Browse Topics"
 template = "index.html"
 +++
 
-Welcome to the Hakuna Zola Project! Add your homepage content here.
+Browse Topics
+Chose an option that you need help with or search above

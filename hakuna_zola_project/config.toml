@@ -16,5 +16,6 @@ highlight_code = false
 
 [extra]
 # Put all your custom variables here
+avatar = "/images/logo.png"
 
 
